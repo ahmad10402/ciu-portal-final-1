@@ -1,25 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-  <script>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title>Dashboard</title>
+	<meta name="generator" content="Trio Office 6.2.8.2 (Windows)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<script>
     const user = localStorage.getItem("authenticated");
     if (!user) window.location.href = "index.html";
     function logout() {
       localStorage.removeItem("authenticated");
       window.location.href = "index.html";
     }
-  </script>
+  
+
+</script>
+	<style type="text/css">
+		h2.cjk { font-family: "NSimSun" }
+		h2.ctl { font-family: "Arial" }
+	</style>
 </head>
-<body>
-  <h2>Welcome, Student</h2>
-  <ul>
-    <li><a href="profile.html">Student Profile</a></li>
-    <li><a href="grades.html">Grades</a></li>
-    <li><a href="transcript.html">Transcript</a></li>
-    <li><a href="schedule.html">Schedule</a></li>
-    <li><button onclick="logout()">Logout</button></li>
-  </ul>
+<body lang="en-US" dir="ltr"><h2 class="western">Welcome, Student</h2>
+<ul>
+	<li><p style="margin-bottom: 0in"><a href="profile.html">Student
+	Profile</a> 
+	</p>
+	<li><p style="margin-bottom: 0in"><a href="grades.html">Grades</a> 
+	</p>
+	<li><p style="margin-bottom: 0in"><a href="transcript.html">Transcript</a>
+		</p>
+	<li><p style="margin-bottom: 0in"><a href="schedule.html">Schedule</a>
+		</p>
+	<li><p>Logout 
+	</p>
+</ul>
 </body>
 </html>

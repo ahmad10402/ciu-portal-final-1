@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (localStorage.getItem("authenticated") !== "true") {
+      window.location.href = "index.html";
+    }
+    function logout() {
+      localStorage.removeItem("authenticated");
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body>
+  <h2>Welcome, Muhammad Younes</h2>
+  <ul>
+    <li><a href="grades.html">Grades</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><button onclick="logout()">Logout</button></li>
+  </ul>
+</body>
+</html>
