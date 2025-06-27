@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const user = localStorage.getItem("authenticated");
+    if (!user) window.location.href = "index.html";
+    function logout() {
+      localStorage.removeItem("authenticated");
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body>
+  <h2>Welcome, Student</h2>
+  <ul>
+    <li><a href="profile.html">Student Profile</a></li>
+    <li><a href="grades.html">Grades</a></li>
+    <li><a href="transcript.html">Transcript</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><button onclick="logout()">Logout</button></li>
+  </ul>
+</body>
+</html>
